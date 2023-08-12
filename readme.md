@@ -1,8 +1,12 @@
-# WGU-Project
+# Student System Migration
 
 ## Overview
 
-This project revolves around the task of migrating a university's existing student system to a new platform using C++. The existing application already has requirements which you, as the hired contractor, must fulfill in implementing this system. The system is responsible for reading and manipulating the provided data, maintaining a current roster of students within a given course, and handling student information such as IDs, names, email addresses, age, course completion days, and degree programs. The implementation must strictly adhere to the guidelines provided, without the use of third-party libraries.
+This project revolves around the task of migrating a university's existing student system to a new platform using C++. 
+The existing application already has requirements which you, as the hired contractor, must fulfill in implementing this system. 
+The system is responsible for reading and manipulating the provided data, maintaining a current roster of students within a given 
+course, and handling student information such as IDs, names, email addresses, age, course completion days, and degree programs. 
+The implementation must strictly adhere to the guidelines provided, without the use of third-party libraries.
 
 ### Key Features
 
