@@ -1,94 +1,35 @@
-```
-# README
+# WGU-Project
 
-## Student System Migration Project
+## Overview
 
-This repository contains a C++ project for migrating an existing student system to a new platform. The project includes the implementation of five classes: Student, SecurityStudent, NetworkStudent, SoftwareStudent, and Roster. The program reads and manipulates student data based on the provided requirements.
+This project revolves around the task of migrating a university's existing student system to a new platform using C++. The existing application already has requirements which you, as the hired contractor, must fulfill in implementing this system. The system is responsible for reading and manipulating the provided data, maintaining a current roster of students within a given course, and handling student information such as IDs, names, email addresses, age, course completion days, and degree programs. The implementation must strictly adhere to the guidelines provided, without the use of third-party libraries.
+
+### Key Features
+
+- Two main classes: `Student` and `Roster`, to encapsulate all student data and manipulations.
+- Data Input: Accepts student data in a specific string format, parsed into proper objects and stored within an array.
+- Detailed Requirements: Various functions and methods for accessing, modifying, and displaying student data.
+- Output Handling: Specific data-related outputs directed to the console.
 
 ## Requirements
 
-- Git: The project assumes that Git is installed on your system. If Git is not installed, you can download and install it from the official website: https://git-scm.com/downloads
+### Project Structure
 
-- C++ Compiler: You need a C++ compiler to compile and run the program. Ensure that a suitable compiler is installed on your system.
+The project structure requires the creation of the following files:
+- `degree.h`
+- `student.h` and `student.cpp`
+- `roster.h` and `roster.cpp`
+- `main.cpp`
 
-## Installation
+### Enumerated Data Types
 
-To install and run the program, follow the steps below:
+- Definition of a data type `DegreeProgram` containing values `SECURITY`, `NETWORK`, and `SOFTWARE`.
 
-1. Clone this repository to your local machine:
+### Classes
 
-   ```
-   git clone https://github.com/your-username/student-system-migration.git
-   ```
+- **Student class**: Includes variables for student ID, name, email address, age, course completion days, and degree program, along with accessor, mutator functions, constructors, and a print function.
+- **Roster class**: Holds the student data, methods for adding, removing, printing all student data, printing average days in courses, validating email addresses, and printing by degree program.
 
-2. Navigate to the project directory:
+### Main Functionality
 
-   ```
-   cd student-system-migration
-   ```
-
-## Compilation and Execution
-
-### Linux and macOS
-
-1. Compile the program using the provided makefile:
-
-   ```
-   make
-   ```
-
-   This command will compile the source files and create the target executable named `c867`.
-
-2. Run the compiled program:
-
-   ```
-   ./c867
-   ```
-
-   The program will execute and display the output in the console.
-
-### Windows
-
-1. Compile the program using the provided makefile (requires MinGW or a suitable C++ compiler):
-
-   ```
-   mingw32-make
-   ```
-
-   This command will compile the source files and create the target executable named `c867.exe`.
-
-2. Run the compiled program:
-
-   ```
-   c867.exe
-   ```
-
-   The program will execute and display the output in the console.
-
-## Project Details
-
-The goal of this project is to migrate an existing student system to a new platform using C++. The system manages student information for a university course and includes functionality to add students, remove students, print student data, and perform various operations on the student data.
-
-The project consists of the following files:
-
-- `degree.h`: Defines the enumerated data type Degree for the degree programs.
-
-- `student.h` and `student.cpp`: Contains the base Student class, which includes the variables for student information and member functions for accessing and manipulating the data.
-
-- `networkStudent.h` and `networkStudent.cpp`: Defines the NetworkStudent class, a subclass of Student, which represents students in the networking program.
-
-- `securityStudent.h` and `securityStudent.cpp`: Defines the SecurityStudent class, a subclass of Student, which represents students in the security program.
-
-- `softwareStudent.h` and `softwareStudent.cpp`: Defines the SoftwareStudent class, a subclass of Student, which represents students in the software program.
-
-- `roster.h` and `roster.cpp`: Contains the Roster class, which manages the student roster, including adding and removing students, printing student information, and performing other operations on the student data.
-
-## Contributing
-
-If you would like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
+- Demonstrate the required functionality through function calls in `main.cpp`.
